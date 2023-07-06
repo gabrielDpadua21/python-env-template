@@ -6,6 +6,8 @@ if [[ ! $REPLY == ^[Yy]$ ]]
 then
     echo "project reset"
     rm -rf .git
+    git init
     git add .
-    git commit -m "chore:"setup project" 
+    git commit -m "chore: setup project"
+    git checkout -b main
 fi
